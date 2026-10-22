@@ -12,8 +12,7 @@ public class LibraryAssistant extends LibraryStaff{
 
     @Override
     public double calculateMonthlyCompensation() {
-        // Business rule: Includes shift allowance
-        return monthlySalary + shiftAllowance;
+        return getMonthlySalary() + shiftAllowance;
     }
 
     @Override

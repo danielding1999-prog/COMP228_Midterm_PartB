@@ -62,6 +62,8 @@ public class DriverMain {
             System.out.println("\nAttempting duplicate reservation for: " + targetBook.getTitle());
             member2.reserveBook(targetBook);
 
+            System.out.println("=== Validation ===");
+            Member val1 = new Member("P003", "James Bond", "647-555-9872", "M-1003", 140, "Premium");
         } catch (IllegalArgumentException e) {
             System.err.println("Validation Error: " + e.getMessage());
         }

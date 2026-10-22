@@ -14,7 +14,7 @@ public class Librarian extends LibraryStaff{
     public double calculateMonthlyCompensation() {
         
         double processingAllowance = booksProcessed * 2.00;
-        return monthlySalary + processingAllowance;
+        return getMonthlySalary() + processingAllowance;
     }
 
     

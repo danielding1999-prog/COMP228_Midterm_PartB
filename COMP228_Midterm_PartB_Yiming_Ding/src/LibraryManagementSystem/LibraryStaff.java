@@ -3,9 +3,9 @@ package LibraryManagementSystem;
 public abstract class LibraryStaff extends Person implements Reportable{
 protected static int staffCount = 0;
     
-    protected final String staffId;
-    protected final String department;
-    protected final double monthlySalary;
+    private final String staffId;
+    private final String department;
+    private final double monthlySalary;
 
     public LibraryStaff(String personId, String name, String phoneNumber, String staffId, String department, double monthlySalary) {
         super(personId, name, phoneNumber);
